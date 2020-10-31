@@ -36,25 +36,27 @@ model](https://juju.is/model-driven-operations) that tells operators how to
 integrate with one another. This dramatically simplifies the operations of
 large deployments.
 
-A key focus for Juju is to simplify operator design, development and usage.
-Instead of making very complex operators for specific scenarios, Juju
-encourages devops to make composable operators, each of which drives a
+A key focus for Juju is to **simplify operator design, development and
+usage**.  Instead of making very complex operators for specific scenarios,
+Juju encourages devops to make composable operators, each of which drives a
 single Docker image, and which can be reused in different settings.
 [Composable operators](https://juju.is/integration) enable very rich
-scenarios to be constructed out of simpler operators that do one thing, and
-do it well.
+scenarios to be constructed out of simpler **operators that do one thing and
+do it well**.
 
 The OLM provides a central mechanism for operator instantiation,
 configuration, upgrades, integration and administration. The OLM provides a
 range of [operator lifecycle services](https://juju.is/operator-services)
-including leader election and persistent state.
+including leader election and persistent state. Instead of manually
+deploying and configuring operators, the OLM manages all the operators in a
+model at the direction of the administrator.
 
 ## Open Operator Collection
 
-A world's [largest collection of operators](https://charmhub.io/). The
-community emphasizes quality, collaboration and consistency. Publish your
-own operator and share integration code for other operators to connect to
-your application.
+A world's [largest collection of operators](https://charmhub.io/) all use
+Juju as their OLM. The Charmhub community emphasizes quality, collaboration
+and consistency. Publish your own operator and share integration code for
+other operators to connect to your application.
 
 The [Open Operator Manifesto](https://charmhub.io/manifesto) outlines the
 values of the community and describe the ideal behaviour of operators, to
