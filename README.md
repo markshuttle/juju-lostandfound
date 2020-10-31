@@ -5,6 +5,8 @@
 running Kubernetes operators, especially in projects that integrate many
 different operators from different publishers.
 
+## Why Juju is interesting
+
 [A Kubernetes operator is a container that drives the configuration and
 operation of a particular workload](https://charmhub.io/about). By
 encapsulating ops code as a reusable container, the operator pattern moves
@@ -90,16 +92,18 @@ written in Golang. The standard Juju packaging includes an embedded database
 for centralised logging and persistence, but there is no need to manage that
 database separately.
 
-The Juju OLM is written in Golang. Operators can be written in any language
-but we do encourage new authors to use the Python Operator Framework for
-ease of contribution, support and community participation.
+Operators can be written in any language but we do encourage new authors to
+use the Python Operator Framework for ease of contribution, support and
+community participation.
 
 ## Production grade
 
 The Juju server has built-in support for [high
 availability](https://juju.is/high-availability-enterprise-olm) when scaled
 out to three instances. It can monitor itself and grow additional instances
-in the event of failure, within predetermined limits.
+in the event of failure, within predetermined limits. Juju supports backup,
+restore, and rolling upgrade operations appropriate for large-scale
+centralised enterprise grade management and operations systems.
 
 ## Get started
 
