@@ -1,61 +1,78 @@
-[![Juju logo](doc/juju-logo.png?raw=true)](https://jujucharms.com/)
+[![Juju logo](doc/juju-logo.png?raw=true)](https://juju.is/)
 
-Simple, secure and stable devops tooling. 
-Juju keeps complexity low and productivity high. 
-Built to manage today’s complex application architectures wherever they are run.
- 
-Built for
-- SRE and operations teams
-- Developers
-- Data engineers
+A model-driven Operator Lifecycle Manager.
 
-Excels at
-- Making your deployment understandable 
-- Simplifying post-install operations, such as upgrades, updates and configuration management
-- Managing hybrid-cloud services, whether on Kubernetes, VMs, bare metal or any combination
+An "operator" is a reusable operations code package that drives the
+configuration and operation of a particular workload. By encapsulating ops
+code as a reusable package, the operator pattern moves beyond traditional
+config management to allow much more agile operations for complex cloud
+workloads.
 
-## Why Juju?
+Shared, open source operators take **infra as code to the next level** with
+community-driven ops and integration code.
 
-Juju increases your productivity and decreases your costs.
+Juju is a **universal OLM** that supports operators on bare metal, virtual
+machines or cloud instances, as well as on Kubernetes. Embrace the operator
+pattern across container and legacy estate.
 
-- **Increase confidence**  
- If you have ever put off upgrading something in production because something might break, then consider Juju.
- Juju allows applications to automatically negotiate their configuration, creating optimal settings dynamically.
+**Juju excels at application integration**. Instead of simply focusing on
+lifecycle management, the Juju OLM provides a rich application graph model
+that tells operators how to integrate with one another. This dramatically
+simplifies the operations of large deployments.
 
+Composable operators enable very rich scenarios to be constructed out of
+simpler operators that do one thing, and do it well.
 
-- **Reduce complexity**  
- Microservices have made applications simpler, but operations more complex.
- Regain your understanding of the whole stack.
+## Open Operator Collection
 
+A world's largest collection of composable operators. The community
+emphasizes quality, collaboration and consistency. Publish your own operator
+and share integration code for other operators to connect to your
+application.
 
-- **Strengthen operations knowledge**  
- Everyone has their in-house expert.
- Encapsulating their know-how in charms distributes that knowledge throughout the business.
+## Pure Python operators
 
+The Python Operator Framework makes it easy to write an operator. The
+framework handles all the details of communication between integrated
+operators, so you can focus on your own application lifecycle management.
 
-- **Simplify day two and beyond**  
- Upgrades, provisioning new capacity, applying configuration changes can be subtle and difficult.
- Juju takes responsibility for them, as well as deployment.
+Code sharing between operator publishers is simplified making it much faster
+to collaborate on distributed systems involving components from many
+different publishers and upstreams.
 
+With the Python Operator Framework, your operator is a Python event handler.
+Lifecycle management, configuration and integration are all events delivered
+to your charm by the framework.
 
- - **Maintain portability and repeatability**  
- Retain control over your deployment and eliminate the need for vendor-specific offerings.
- Your devops tooling should be cloud-agnostic and Kubernetes-aware.
+## Multi cloud and hybrid operations across ARM and x86 infrastructure
 
+THe Juju OLM supports AWS, Azure, Google, Oracle, OpenStack, VMware and bare
+metal machines, as well as any conformant Kubernetes cluster. Integrate
+operators across clouds, and across machines and containers, just as easily.
+
+Juju operators support multiple architectures. Connect applications on ARM
+with applications on x86 to take advantage of architecture-specific
+optimisations.
 
 ## Get started
 
-[Install Juju][] and [get started][] with your first project.
+Our community hangs out at the [Charmhub
+discourse](https://discourse.jujucharms.com/) which serves as a combination
+mailing list and web forum. Keep up with the news and get a feel for
+operator engineering and usage there.
 
-Read the [project’s documentation](https://jaas.ai/docs).
+Get started with the [install instructions](https://juju.is/docs/installing)
+and [try the
+tutorials](https://juju.is/docs/tutorials). All you need is a small K8s
+cluster, or an Ubuntu machine or VM to run MicroK8s.
 
-Explore questions and conversations on our [Discourse forum](https://discourse.jujucharms.com/).
+Read the [documentation](https://juju.is/docs) for a comprehensive reference
+of commands and usage.
 
-Developers are welcome to read through our [contributing guidelines](CONTRIBUTING.md) to learn how to make code changes.
+## Contributing
 
-File bugs at our project [Launchpad](https://bugs.launchpad.net/juju/+filebug) site
+Follow our [code and contribution guidelines](CONTRIBUTING.md) to learn how
+to make code changes. File bugs in
+[Launchpad](https://bugs.launchpad.net/juju/+filebug) or ask questions on
+our [Freenode IRC channel](https://webchat.freenode.net/#juju).
 
-Find out more, get help or ask questions on our [Freenode IRC channel](https://webchat.freenode.net/#juju).
-
-  [Install Juju]: https://jaas.ai/docs/install
-  [get started]: https://jaas.ai/docs/getting-started
