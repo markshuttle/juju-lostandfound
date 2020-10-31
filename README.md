@@ -17,14 +17,15 @@ Shared, open source operators **take infra as code to the next level** with
 community-driven ops and integration code. Reuse of ops code [improves
 quality](https://juju.is/ops-code-quality) and encourages wider community
 engagement and contribution. Operators also improve security through
-automation, Juju operators are a [community-driven
+consistent automation. Juju operators are a [community-driven
 devsecops](https://juju.is/devsecops) approach to open source operations.
 
-Juju is a **universal OLM** that extends the operator pattern to traditional
-applications (without Kubernetes) on Linux and Windows. Such machine
-operators can work on bare metal, virtual machines or cloud instances,
-enabling multi cloud and hybrid cloud operations. Juju allows you to embrace
-the operator pattern on [both container and legacy
+Juju implements the Kubernetes operator pattern, but is also a **universal
+OLM** that extends the operator pattern to traditional applications (without
+Kubernetes) on Linux and Windows. Such machine operators can work on bare
+metal, virtual machines or cloud instances, enabling [multi cloud and hybrid
+cloud operations](https://juju.is/multi-cloud-operations). Juju allows you
+to embrace the operator pattern on [both container and legacy
 estate](https://juju.is/universal-operators). An operator for machine-based
 environments can share 95% of its code with a Kubernetes operator for the
 same app.
