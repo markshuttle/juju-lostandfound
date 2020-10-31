@@ -1,26 +1,35 @@
 [![Juju logo](doc/juju-logo.png?raw=true)](https://juju.is/)
 
-A model-driven Operator Lifecycle Manager.
+[Juju is a model-driven **Operator Lifecycle Manager
+(OLM)**](https://juju.is/). Juju greatly improves the experience of running
+Kubernetes operators, especially in projects that integrate many different
+operators from different publishers.
 
-An "operator" is a reusable operations code package that drives the
-configuration and operation of a particular workload. By encapsulating ops
-code as a reusable package, the operator pattern moves beyond traditional
-config management to allow much more agile operations for complex cloud
-workloads.
+[A Kubernetes operator is a container that drives the configuration and
+operation of a particular workload](https://charmhub.io/about). By
+encapsulating ops code as a reusable container, the operator pattern moves
+[beyond traditional config
+management](https://juju.is/beyond-configuration-management) to allow much
+more agile operations for complex cloud workloads.
 
 Shared, open source operators take **infra as code to the next level** with
 community-driven ops and integration code.
 
-Juju is a **universal OLM** that supports operators on bare metal, virtual
-machines or cloud instances, as well as on Kubernetes. Embrace the operator
-pattern across container and legacy estate.
+Juju is a **universal OLM** that extends the operator concept to traditional
+applications without Kubernetes, on Linux and Windows, on bare metal,
+virtual machines or cloud instances, as well as on Kubernetes. Embrace the
+operator pattern across container and legacy estate.
 
 **Juju excels at application integration**. Instead of simply focusing on
 lifecycle management, the Juju OLM provides a rich application graph model
 that tells operators how to integrate with one another. This dramatically
 simplifies the operations of large deployments.
 
-Composable operators enable very rich scenarios to be constructed out of
+A key focus for Juju is to simplify operator design, development and usage.
+Instead of making very complex operators for specific scenarios, Juju
+encourages devops to make composable operators, each of which drives a
+single Docker image, and which can be reused in different settings.
+**Composable operators enable very rich scenarios** to be constructed out of
 simpler operators that do one thing, and do it well.
 
 ## Open Operator Collection
@@ -29,6 +38,10 @@ A world's largest collection of composable operators. The community
 emphasizes quality, collaboration and consistency. Publish your own operator
 and share integration code for other operators to connect to your
 application.
+
+The Open Operator Manifesto outlines the values of the community and
+describe the ideal behaviour of operators to shape contributions and
+discussions.
 
 ## Pure Python operators
 
@@ -62,9 +75,8 @@ mailing list and web forum. Keep up with the news and get a feel for
 operator engineering and usage there.
 
 Get started with the [install instructions](https://juju.is/docs/installing)
-and [try the
-tutorials](https://juju.is/docs/tutorials). All you need is a small K8s
-cluster, or an Ubuntu machine or VM to run MicroK8s.
+and [try the tutorials](https://juju.is/docs/tutorials). All you need is a
+small K8s cluster, or an Ubuntu machine or VM to run MicroK8s.
 
 Read the [documentation](https://juju.is/docs) for a comprehensive reference
 of commands and usage.
