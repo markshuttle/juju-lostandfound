@@ -3,21 +3,22 @@
 [Juju is a model-driven **Operator Lifecycle Manager**
 (OLM)](https://juju.is/overview). Juju greatly improves the experience of
 running Kubernetes operators, especially in projects that integrate many
-different operators from different publishers.
+operators from different publishers.
 
-## Why Juju is interesting
+## Why Juju
 
-[A Kubernetes operator is a container that drives the configuration and
-operation of a particular workload](https://charmhub.io/about). By
-encapsulating ops code as a reusable container, the operator pattern moves
-[beyond traditional config
+A Kubernetes operator is [a container that drives the config and operation
+of a workload](https://charmhub.io/about). By encapsulating ops code as a
+reusable container, the operator pattern moves [beyond traditional config
 management](https://juju.is/beyond-configuration-management) to allow much
 more agile operations for complex cloud workloads.
 
 Shared, open source operators **take infra as code to the next level** with
 community-driven ops and integration code. Reuse of ops code [improves
 quality](https://juju.is/ops-code-quality) and encourages wider community
-engagement and contribution.
+engagement and contribution. Operators also improve security through
+automation, Juju operators are a [community-driven
+devsecops](https://juju.is/devsecops) approach to open source operations.
 
 Juju is a **universal OLM** that extends the operator pattern to traditional
 applications (without Kubernetes) on Linux and Windows. Such machine
@@ -67,8 +68,8 @@ A single scenario can include applications on Kubernetes, as well as
 applications on a range of clouds and bare metal instances, all integrated
 automatically.
 
-Juju operators support multiple CPU architectures. Connect applications on ARM
-with applications on x86 and take advantage of silicon-specific
+Juju operators support multiple CPU architectures. Connect applications on
+ARM with applications on x86 and take advantage of silicon-specific
 optimisations. It is good practice for operators to adapt to their
 environment and accelerate workloads accordingly.
 
@@ -77,7 +78,8 @@ environment and accelerate workloads accordingly.
 The [Python Operator Framework](https://pythonoperatorframework.io/) makes
 it easy to write an operator. The framework handles all the details of
 communication between integrated operators, so you can focus on your own
-[application lifecycle management](https://juju.is/operator-lifecycle-manager).
+[application lifecycle
+management](https://juju.is/operator-lifecycle-manager).
 
 Code sharing between operator publishers is simplified making it much faster
 to collaborate on distributed systems involving components from many
@@ -108,12 +110,12 @@ centralised enterprise grade management and operations systems.
 ## Get started
 
 Our community hangs out at the [Charmhub
-discourse](https://discourse.juju.is/) which serves as a combination
-mailing list and web forum. Keep up with the news and get a feel for
-operator engineering and usage there. Get  the Juju CLI on Windows, macOS or
-Linux with the [install instructions](https://juju.is/docs/installing) and
-[try the tutorials](https://juju.is/docs/tutorials). All you need is a small
-K8s cluster, or an Ubuntu machine or VM to run MicroK8s.
+discourse](https://discourse.juju.is/) which serves as a combination mailing
+list and web forum. Keep up with the news and get a feel for operator
+engineering and usage there. Get  the Juju CLI on Windows, macOS or Linux
+with the [install instructions](https://juju.is/docs/installing) and [try
+the tutorials](https://juju.is/docs/tutorials). All you need is a small K8s
+cluster, or an Ubuntu machine or VM to run MicroK8s.
 
 Read the [documentation](https://juju.is/docs) for a comprehensive reference
 of commands and usage.
