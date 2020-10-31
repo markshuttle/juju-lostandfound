@@ -1,9 +1,9 @@
 [![Juju logo](doc/juju-logo.png?raw=true)](https://juju.is/)
 
 [Juju is a model-driven **Operator Lifecycle Manager**
-(OLM)](https://juju.is/overview). Juju greatly improves the experience of running
-Kubernetes operators, especially in projects that integrate many different
-operators from different publishers.
+(OLM)](https://juju.is/overview). Juju greatly improves the experience of
+running Kubernetes operators, especially in projects that integrate many
+different operators from different publishers.
 
 [A Kubernetes operator is a container that drives the configuration and
 operation of a particular workload](https://charmhub.io/about). By
@@ -17,11 +17,11 @@ community-driven ops and integration code. Reuse of ops code [improves
 quality](https://juju.is/ops-code-quality) and encourages wider community
 engagement and contribution.
 
-Juju is a **universal OLM** that extends the operator pattern to
-traditional applications (without Kubernetes) on Linux and Windows. Such
-machine operators can work on bare metal, virtual machines or cloud
-instances, enabling multi cloud and hybrid cloud operations. Embrace the
-operator pattern on [both container and legacy
+Juju is a **universal OLM** that extends the operator pattern to traditional
+applications (without Kubernetes) on Linux and Windows. Such machine
+operators can work on bare metal, virtual machines or cloud instances,
+enabling multi cloud and hybrid cloud operations. Juju allows you to embrace
+the operator pattern on [both container and legacy
 estate](https://juju.is/universal-operators). An operator for machine-based
 environments can share 95% of its code with a Kubernetes operator for the
 same app.
@@ -40,17 +40,10 @@ single Docker image, and which can be reused in different settings.
 scenarios to be constructed out of simpler operators that do one thing, and
 do it well.
 
-## Architecture
-
-The Juju [client, server and agent](https://juju.is/architecture) are all written in Golang. The standard
-Juju packaging includes an embedded database for centralised logging and
-persistence, but there is no need to manage that database separately.
-
-## Production grade
-
-The Juju server has built-in support for [high availability](https://juju.is/high-availability-enterprise-olm) when
-scaled out to three instances. It can monitor itself and grow additional
-instances in the event of failure, within predetermined limits.
+The OLM provides a central mechanism for operator instantiation,
+configuration, upgrades, integration and administration. The OLM provides a
+range of [operator lifecycle services](https://juju.is/operator-services)
+including leader election and persistent state.
 
 ## Open Operator Collection
 
@@ -63,25 +56,6 @@ The [Open Operator Manifesto](https://charmhub.io/manifesto) outlines the
 values of the community and describe the ideal behaviour of operators to
 shape contributions and discussions.
 
-## Pure Python operators
-
-The [Python Operator Framework](https://github.com/canonical/operator) makes
-it easy to write an operator. The framework handles all the details of
-communication between integrated operators, so you can focus on your own
-application lifecycle management.
-
-Code sharing between operator publishers is simplified making it much faster
-to collaborate on distributed systems involving components from many
-different publishers and upstreams.
-
-With the Python Operator Framework, your operator is a Python event handler.
-Lifecycle management, configuration and integration are all events delivered
-to your charm by the framework.
-
-The Juju OLM is written in Golang. Operators can be written in any language
-but we do encourage new authors to use the Python Operator Framework for
-ease of contribution, support and community participation.
-
 ## Multi cloud and hybrid operations across ARM and x86 infrastructure
 
 THe Juju OLM supports AWS, Azure, Google, Oracle, OpenStack, VMware and bare
@@ -91,6 +65,37 @@ operators across clouds, and across machines and containers, just as easily.
 Juju operators support multiple architectures. Connect applications on ARM
 with applications on x86 and take advantage of architecture-specific
 optimisations.
+
+## Architecture
+
+The Juju [client, server and agent](https://juju.is/architecture) are all
+written in Golang. The standard Juju packaging includes an embedded database
+for centralised logging and persistence, but there is no need to manage that
+database separately.
+
+## Production grade
+
+The Juju server has built-in support for [high
+availability](https://juju.is/high-availability-enterprise-olm) when scaled
+out to three instances. It can monitor itself and grow additional instances
+in the event of failure, within predetermined limits.
+
+## Pure Python operators
+
+The [Python Operator Framework](https://pythonoperatorframework.io/) makes
+it easy to write an operator. The framework handles all the details of
+communication between integrated operators, so you can focus on your own
+[application lifecycle management](https://juju.is/operator-lifecycle-manager).
+
+Code sharing between operator publishers is simplified making it much faster
+to collaborate on distributed systems involving components from many
+different publishers and upstreams. Your operator is a Python event handler.
+Lifecycle management, configuration and integration are all events delivered
+to your charm by the framework.
+
+The Juju OLM is written in Golang. Operators can be written in any language
+but we do encourage new authors to use the Python Operator Framework for
+ease of contribution, support and community participation.
 
 ## Get started
 
