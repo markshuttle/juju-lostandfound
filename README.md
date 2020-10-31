@@ -53,7 +53,7 @@ own operator and share integration code for other operators to connect to
 your application.
 
 The [Open Operator Manifesto](https://charmhub.io/manifesto) outlines the
-values of the community and describe the ideal behaviour of operators to
+values of the community and describe the ideal behaviour of operators, to
 shape contributions and discussions.
 
 ## Multi cloud and hybrid operations across ARM and x86 infrastructure
@@ -83,16 +83,16 @@ different publishers and upstreams. Your operator is a Python event handler.
 Lifecycle management, configuration and integration are all events delivered
 to your charm by the framework.
 
-The Juju OLM is written in Golang. Operators can be written in any language
-but we do encourage new authors to use the Python Operator Framework for
-ease of contribution, support and community participation.
-
 ## Architecture
 
 The Juju [client, server and agent](https://juju.is/architecture) are all
 written in Golang. The standard Juju packaging includes an embedded database
 for centralised logging and persistence, but there is no need to manage that
 database separately.
+
+The Juju OLM is written in Golang. Operators can be written in any language
+but we do encourage new authors to use the Python Operator Framework for
+ease of contribution, support and community participation.
 
 ## Production grade
 
@@ -104,13 +104,12 @@ in the event of failure, within predetermined limits.
 ## Get started
 
 Our community hangs out at the [Charmhub
-discourse](https://discourse.jujucharms.com/) which serves as a combination
+discourse](https://discourse.juju.is/) which serves as a combination
 mailing list and web forum. Keep up with the news and get a feel for
-operator engineering and usage there.
-
-Get started with the [install instructions](https://juju.is/docs/installing)
-and [try the tutorials](https://juju.is/docs/tutorials). All you need is a
-small K8s cluster, or an Ubuntu machine or VM to run MicroK8s.
+operator engineering and usage there. Get  the Juju CLI on Windows, macOS or
+Linux with the [install instructions](https://juju.is/docs/installing) and
+[try the tutorials](https://juju.is/docs/tutorials). All you need is a small
+K8s cluster, or an Ubuntu machine or VM to run MicroK8s.
 
 Read the [documentation](https://juju.is/docs) for a comprehensive reference
 of commands and usage.
