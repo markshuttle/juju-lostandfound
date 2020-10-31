@@ -58,27 +58,17 @@ shape contributions and discussions.
 
 ## Multi cloud and hybrid operations across ARM and x86 infrastructure
 
-THe Juju OLM supports AWS, Azure, Google, Oracle, OpenStack, VMware and bare
+The Juju OLM supports AWS, Azure, Google, Oracle, OpenStack, VMware and bare
 metal machines, as well as any conformant Kubernetes cluster. Integrate
 operators across clouds, and across machines and containers, just as easily.
+A single scenario can include applications on Kubernetes, as well as
+applications on a range of clouds and bare metal instances, all integrated
+automatically.
 
-Juju operators support multiple architectures. Connect applications on ARM
-with applications on x86 and take advantage of architecture-specific
-optimisations.
-
-## Architecture
-
-The Juju [client, server and agent](https://juju.is/architecture) are all
-written in Golang. The standard Juju packaging includes an embedded database
-for centralised logging and persistence, but there is no need to manage that
-database separately.
-
-## Production grade
-
-The Juju server has built-in support for [high
-availability](https://juju.is/high-availability-enterprise-olm) when scaled
-out to three instances. It can monitor itself and grow additional instances
-in the event of failure, within predetermined limits.
+Juju operators support multiple CPU architectures. Connect applications on ARM
+with applications on x86 and take advantage of silicon-specific
+optimisations. It is good practice for operators to adapt to their
+environment and accelerate workloads accordingly.
 
 ## Pure Python operators
 
@@ -96,6 +86,20 @@ to your charm by the framework.
 The Juju OLM is written in Golang. Operators can be written in any language
 but we do encourage new authors to use the Python Operator Framework for
 ease of contribution, support and community participation.
+
+## Architecture
+
+The Juju [client, server and agent](https://juju.is/architecture) are all
+written in Golang. The standard Juju packaging includes an embedded database
+for centralised logging and persistence, but there is no need to manage that
+database separately.
+
+## Production grade
+
+The Juju server has built-in support for [high
+availability](https://juju.is/high-availability-enterprise-olm) when scaled
+out to three instances. It can monitor itself and grow additional instances
+in the event of failure, within predetermined limits.
 
 ## Get started
 
